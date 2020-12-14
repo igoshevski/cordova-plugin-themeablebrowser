@@ -1746,7 +1746,7 @@
         if (event) {
             NSMutableDictionary* dict = [NSMutableDictionary new];
             [dict setObject:event forKey:@"type"];
-            [dict setObject:[self.navigationDelegate.themeableBrowserViewController.currentURL absoluteString] forKey:@"url"];
+            [dict setObject:[self.webView.URL absoluteString] forKey:@"url"];
 
             if (index) {
                 [dict setObject:index forKey:@"index"];
